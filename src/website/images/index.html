@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bassem Image Resizing</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/website/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="holder headline">
+        <div class="container">Bassem Image Resizing</div>
+      </div>
+      <div class="container">
+        <label class="subheader"
+          >Welcome to Bassem Image Resizing, please follow the
+          instructions!</label>
+      </div>
+      <div class="holder name">
+        <div class="container">
+          <label for="name">Enter Image Name here</label>
+          <input type="text" id="name" placeholder="enter image name here" />
+        </div>
+        <div class="container">
+          <label for="width">Enter Image Width here</label>
+          <input type="text" id="width" placeholder="enter image width here" />
+        </div>
+        <div class="container">
+          <label for="height">Enter Image Height here</label>
+          <input
+            type="text"
+            id="height"
+            placeholder="enter image height here"
+          />
+          <label id="error"></label>
+          <div class="container">
+            <button id="resize" type="submit">Resize</button>
+          </div>
+        </div>
+      </div>
+      <div class="holder container">
+        <div class="entry">
+          <div class="title">Most Recent Entry</div>
+          <div id="entryHolder">
+            <div id="name"></div>
+            <div>
+              <img src="" alt="" id="image" class="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="build/website/app.js" type="text/javascript"></script>
+  </body>
+</html>
